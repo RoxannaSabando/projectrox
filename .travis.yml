@@ -4,6 +4,6 @@
   install:
     - pip install -r requirements.txt
   script:
-    - nosetests --rednose _test_ -v -d
+    - nosetests --rednose testrox -v -d
   after_success:
     - python-codacy-coverage -r coverage.xml -d ./src/
